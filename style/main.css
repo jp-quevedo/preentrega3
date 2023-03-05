@@ -230,6 +230,9 @@ input[type=submit] {
 }
 
 @media (max-width: 425px) { 
+  .playerscards {
+    width: 75%;
+  }
   .adiz {
     visibility: hidden;
   }

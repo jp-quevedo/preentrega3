@@ -73,9 +73,7 @@ h6 {
 
 #texto {
     grid-area: texto;
-    font-weight: bold;
     text-align: center;
-    color: #4caa6f;
     padding: 0 15px 0 15px;
 }
 
@@ -87,18 +85,7 @@ h6 {
     padding-top: 15px;
 }
   
-.adiz {
-    background-color: goldenrod;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    font-size: 7rem;
-    overflow: hidden;
-    line-height: 2;
-}
-  
-.adde {
+.adiz, .adde {
     background-color: goldenrod;
     color: white;
     font-weight: bold;

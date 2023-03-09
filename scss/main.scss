@@ -128,14 +128,13 @@ ul {
                 color: rgba(175,20,22,0.96);
             }
               
+            a.active {
+                color: rgba(175,20,22,0.96);
+            }
         }
     }
 }
-
-a.active {
-    color: rgba(175,20,22,0.96);
-} 
-
+  
 table, th, td {
     border-collapse: collapse;
     margin: 0;

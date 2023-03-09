@@ -123,7 +123,8 @@ ul li a {
 ul li a:hover {
   color: rgba(175, 20, 22, 0.96);
 }
-ul li a a.active {
+
+a.active {
   color: rgba(175, 20, 22, 0.96);
 }
 

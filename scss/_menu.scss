@@ -1,0 +1,23 @@
+ul {
+    padding-left: 0px;
+
+    li {
+        display: inline-block;
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+            color: $contraste;
+            padding: 0 10px;
+
+            &:hover {
+                color: $resaltado;
+            }
+            
+        }
+    }
+}
+  
+a.active {
+    color: $resaltado;
+}

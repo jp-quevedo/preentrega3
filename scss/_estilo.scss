@@ -1,0 +1,132 @@
+/* Colores */
+$fondo_principal: rgba(255,239,214,0.98);
+$fondo_seccion: #4caa6f;
+$titulo: rgba(175,20,22,0.96);
+$parrafo: #4caa6f;
+$destacado: goldenrod;
+$resaltado: rgba(175,20,22,0.96);
+$contraste: white;
+$borde: #ccc;
+
+.grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "ad1 media ad2"
+      "ad1 texto ad2"
+      "footer footer footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 10% auto 10%;
+    margin: 0;
+}
+  
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: $fondo_principal;
+} 
+
+header {
+    grid-area: header;
+    background-color: $fondo_seccion;
+    text-align: center;
+    display: block;
+    margin: 0 0 0 0;
+}
+
+nav {
+    grid-area: ad1;
+}
+  
+aside {
+    grid-area: ad2;
+}
+
+p {
+    line-height: 2;
+    font-weight: bold;
+    color: $parrafo;
+    font-style: italic;
+}
+
+footer {
+    background-color: $fondo_seccion;
+    text-align: center;
+    display: block;
+    grid-area: footer;
+}
+
+h1 {
+    color: $titulo;
+    font-size: 2rem;
+}
+  
+h3 {
+    color: $titulo;
+}
+  
+h5 {
+    color: $titulo;
+    padding: 10px;
+    font-weight: bold;
+}
+  
+h6 {
+    color: $destacado;
+}
+  
+#media {
+    grid-area: media;
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+
+#texto {
+    grid-area: texto;
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+
+.premio {
+    color: $destacado;
+}
+
+.video {
+    padding-top: 15px;
+}
+  
+.adiz, .adde {
+    background-color: $destacado;
+    color: $contraste;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 7rem;
+    overflow: hidden;
+    line-height: 2;
+}
+
+.torneos {
+    display: flex;
+    flex-direction: column;
+}
+  
+.up {
+    background-color: $fondo_seccion;
+    position:fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 7px;
+    font-size: 150%;
+    border: 1px solid $borde;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 10px;  
+    table-layout: fixed;
+    display: inline-block;
+    text-align: center;
+}

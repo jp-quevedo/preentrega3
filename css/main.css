@@ -109,6 +109,15 @@ h6 {
   border: 1px solid #ccc;
 }
 
+table, th, td {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 10px;
+  table-layout: fixed;
+  display: inline-block;
+  text-align: center;
+}
+
 ul {
   padding-left: 0px;
 }
@@ -129,15 +138,52 @@ a.active {
   color: rgba(175, 20, 22, 0.96);
 }
 
-table, th, td {
-  border-collapse: collapse;
-  margin: 0;
-  padding: 10px;
-  table-layout: fixed;
-  display: inline-block;
-  text-align: center;
+@media (max-width: 425px) {
+  .playerscards {
+    width: 75%;
+  }
+  .adiz {
+    visibility: hidden;
+  }
+  .adde {
+    visibility: hidden;
+  }
+  .videofull {
+    display: none;
+  }
+  .form {
+    margin: 0 0 15px 0;
+    width: 100%;
+    float: none;
+    flex-direction: column-reverse;
+  }
+  form > div {
+    margin: 0 0 15px 0;
+  }
+  form > div > label, legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div, form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text], input[type=email], input[type=url], input[type=password], textarea, select {
+    width: 100%;
+  }
+  #texto {
+    padding: 0;
+  }
 }
-
+@media (min-width: 426px) {
+  .videosmall {
+    display: none;
+  }
+  form > div > label, legend {
+    text-align: right;
+  }
+}
 table tr {
   background-color: rgba(255, 239, 214, 0.98);
 }
@@ -207,53 +253,6 @@ input[type=submit] {
   color: white;
   border: 1px solid #ccc;
   border-radius: 7px;
-}
-
-@media (max-width: 425px) {
-  .playerscards {
-    width: 75%;
-  }
-  .adiz {
-    visibility: hidden;
-  }
-  .adde {
-    visibility: hidden;
-  }
-  .videofull {
-    display: none;
-  }
-  .form {
-    margin: 0 0 15px 0;
-    width: 100%;
-    float: none;
-    flex-direction: column-reverse;
-  }
-  form > div {
-    margin: 0 0 15px 0;
-  }
-  form > div > label, legend {
-    width: 100%;
-    float: none;
-    margin: 0 0 5px 0;
-  }
-  form > div > div, form > div > fieldset > div {
-    width: 100%;
-    float: none;
-  }
-  input[type=text], input[type=email], input[type=url], input[type=password], textarea, select {
-    width: 100%;
-  }
-  #texto {
-    padding: 0;
-  }
-}
-@media (min-width: 426px) {
-  .videosmall {
-    display: none;
-  }
-  form > div > label, legend {
-    text-align: right;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

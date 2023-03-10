@@ -1,3 +1,14 @@
+
+/* Colores */
+$fondo_principal: rgba(255,239,214,0.98);
+$fondo_seccion: #4caa6f;
+$titulo: rgba(175,20,22,0.96);
+$parrafo: #4caa6f;
+$destacado: goldenrod;
+$resaltado: rgba(175,20,22,0.96);
+$contraste: white;
+$borde: #ccc;
+
 .grid {
     display: grid;
     grid-template-areas:
@@ -12,12 +23,12 @@
   
 body {
     font-family: 'Trebuchet MS', sans-serif;
-    background-color: rgba(255,239,214,0.98);
+    background-color: $fondo_principal;
 } 
 
 header {
     grid-area: header;
-    background-color: #4caa6f;
+    background-color: $fondo_seccion;
     text-align: center;
     display: block;
     margin: 0 0 0 0;
@@ -34,34 +45,34 @@ aside {
 p {
     line-height: 2;
     font-weight: bold;
-    color: #4caa6f;
+    color: $parrafo;
     font-style: italic;
 }
 
 footer {
-    background-color: #4caa6f;
+    background-color: $fondo_seccion;
     text-align: center;
     display: block;
     grid-area: footer;
 }
 
 h1 {
-    color: rgba(175,20,22,0.96);
+    color: $titulo;
     font-size: 2rem;
 }
   
 h3 {
-    color: rgba(175,20,22,0.96);
+    color: $titulo;
 }
   
 h5 {
-    color: rgba(175,20,22,0.96);
+    color: $titulo;
     padding: 10px;
     font-weight: bold;
 }
   
 h6 {
-    color: goldenrod;
+    color: $destacado;
 }
   
 #media {
@@ -78,7 +89,7 @@ h6 {
 }
 
 .premio {
-    color: goldenrod;
+    color: $destacado;
 }
 
 .video {
@@ -86,7 +97,7 @@ h6 {
 }
   
 .adiz, .adde {
-    background-color: goldenrod;
+    background-color: $destacado;
     color: white;
     font-weight: bold;
     font-style: italic;
@@ -102,7 +113,7 @@ h6 {
 }
   
 .up {
-    background-color: #4caa6f;
+    background-color: $fondo_seccion;
     position:fixed;
     bottom: 5px;
     right: 5px;
@@ -121,11 +132,11 @@ ul {
 
         a {
             text-decoration: none;
-            color: white;
+            color: $contraste;
             padding: 0 10px;
 
             &:hover {
-                color: rgba(175,20,22,0.96);
+                color: $resaltado;
             }
             
         }
@@ -133,7 +144,7 @@ ul {
 }
   
 a.active {
-    color: rgba(175,20,22,0.96);
+    color: $resaltado;
 }
 
 table, th, td {
@@ -146,7 +157,7 @@ table, th, td {
 }
   
 table tr {
-    background-color: rgba(255,239,214,0.98);
+    background-color: $fondo_principal;
 }
   
 form {
@@ -154,9 +165,9 @@ form {
     align-items: center;
     border-radius:7px;
     flex:1;
-    color: white;
+    color: $contraste;
     font-style: bold;
-    background-color: #4caa6f;
+    background-color: $fondo_seccion;
     padding: 10px;
 }
   
@@ -193,26 +204,26 @@ fieldset {
   
 input[type=text], input[type=email], textarea {
     width: 100%;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid $borde;
+    border-left: 1px solid $borde;
+    border-right: 1px solid $borde;
+    border-bottom: 1px solid $borde;
     border-radius: 7px;
 }
   
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     outline: 0;
-    border-color: rgba(175,20,22,0.96);
+    border-color: $resaltado;
 }
   
 input[type=submit]:hover {
-    background-color: rgba(175,20,22,0.96);
+    background-color: $resaltado;
 }
   
 input[type=submit] {
-    background-color: #4caa6f;
-    color: white;
-    border: 1px solid #ccc;
+    background-color: $fondo_seccion;
+    color: $contraste;
+    border: 1px solid $borde;
     border-radius: 7px;
 }
   
